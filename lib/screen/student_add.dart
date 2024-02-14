@@ -218,24 +218,6 @@ class _studentAddState extends State<studentAdd> {
                         borderRadius: BorderRadius.circular(15)),
                     child: SizedBox(
                       width: double.infinity,
-                      child: OutlinedButton(
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor:
-                                  const Color.fromARGB(192, 39, 2, 226)),
-                          child: const Text(
-                            'ບັນທືກຂໍ້ມູນ',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const adminpage();
-                                },
-                              ),
-                            );
-                          }),
                     ),
                   ),
                 ),
