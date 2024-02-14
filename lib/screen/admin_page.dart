@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_id_card/screen/Login_page.dart';
+import 'package:student_id_card/screen/routes.dart';
 import 'package:student_id_card/screen/student_add.dart';
 import 'package:student_id_card/screen/student_edit.dart';
 
@@ -58,14 +59,7 @@ class _adminpageState extends State<adminpage> {
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const adminpage();
-                                },
-                              ),
-                            );
+                            Navigator.pushNamed(context, AppRoute.search);
                           }),
                     ),
                   ),
@@ -94,14 +88,8 @@ class _adminpageState extends State<adminpage> {
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const studentAdd();
-                                },
-                              ),
-                            );
+                            Navigator.pushNamed(context, AppRoute.studentadd);
+                            Navigator.pushNamed(context, AppRoute.login);
                           }),
                     ),
                   ),
@@ -129,14 +117,7 @@ class _adminpageState extends State<adminpage> {
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const studentEdit();
-                                },
-                              ),
-                            );
+                            Navigator.pushNamed(context, AppRoute.studentedit);
                           }),
                     ),
                   ),
@@ -159,12 +140,7 @@ class _adminpageState extends State<adminpage> {
                         backgroundColor:
                             const Color.fromARGB(192, 178, 177, 183)),
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) {
-                          return const LoginPage();
-                        }),
-                      );
+                      Navigator.pushNamed(context, AppRoute.login);
                     },
                     child: const Text(
                       "ອອກຈາກລະບົບ",

@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:student_id_card/screen/admin_page.dart';
+import 'package:student_id_card/screen/routes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -128,14 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                                     fontSize: 20, color: Colors.white),
                               ),
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) {
-                                      return const adminpage();
-                                    },
-                                  ),
-                                );
+                                Navigator.pushNamed(context, AppRoute.admin);
                               }),
                         ),
                       ),
