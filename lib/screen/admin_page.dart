@@ -134,7 +134,7 @@ class _adminpageState extends State<adminpage> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return const studentEdit();
+                                  return const studentedit();
                                 },
                               ),
                             );
