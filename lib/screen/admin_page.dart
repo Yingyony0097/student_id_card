@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_id_card/screen/Login_page.dart';
+import 'package:student_id_card/screen/search_student.dart';
 import 'package:student_id_card/screen/student_add.dart';
 import 'package:student_id_card/screen/student_edit.dart';
 
@@ -62,7 +63,7 @@ class _adminpageState extends State<adminpage> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return const adminpage();
+                                  return const searchstudent();
                                 },
                               ),
                             );
