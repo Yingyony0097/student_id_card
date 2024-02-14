@@ -15,7 +15,7 @@ class AppRoute {
   static get all => <String, WidgetBuilder>{
         admin: (context) => const adminpage(),
         login: (context) => const LoginPage(),
-        studentedit: (context) => const studentEdit(),
+        studentedit: (context) => const StudentEdit(),
         studentadd: (context) => const studentAdd(),
         search: (context) => const searchstudent(),
       };
